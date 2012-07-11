@@ -20,8 +20,7 @@
 			
 			$.each(collection, function(index, item){
 				self.append( 
-					$("<option>").val( item[value] )
-								 .html( getValue(item, text) ) 
+					$("<option>", { value : getValue(item, value) }).html( getValue(item, text) ) 
 				);
 			});
 			
